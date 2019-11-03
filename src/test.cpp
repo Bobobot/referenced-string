@@ -5,6 +5,7 @@ int main() {
 
 	//Régi tesztesetek
 
+	/*
 	MyString myString1{}; //paraméter nélküli konstruktor
 	MyString myString2{"kacsa"}; //const char* paraméterű konstruktor
 	MyString myString3{myString2}; //másoló konstruktor
@@ -16,6 +17,7 @@ int main() {
 
 	//a myString1 és myString2 most ugyanarra a stringre mutat, viszont ha meghívjuk az operator[]-t az egyiken, akkor lemásolódik
 	myString1[0] = 'l';
+	std::cout << myString1[0] << std::endl; //ez most már l
 	std::cout << myString2[0] << std::endl; //még mindig k-t ír ki
 	std::cout << myString2.length() << std::endl; //a kacsa 5 karakterből áll
 
@@ -30,7 +32,7 @@ int main() {
 
 	std::cin >> myString1; //operator>>
 	std::cout << myString1 << std::endl;
-	
+	*/
 	//Új tesztesetek
 
 	MyString kacsaString1{"kacsa"};

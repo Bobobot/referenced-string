@@ -54,12 +54,12 @@ MyString &MyString::operator=(const MyString &other) {
 	return *this;
 }
 
-//TODO első szorgalmi
 
 StringProxy MyString::operator[](int index) {
 	return StringProxy{this, index};
 }
 
+//szorgalmi előtti állapot
 /*
 char &MyString::operator[](int index) {
 	if (string->getRefCount() == 1) return (*string)[index]; //ha csak egy reference van a stringre, akkor felesleges lemásolni
